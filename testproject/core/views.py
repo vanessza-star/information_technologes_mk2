@@ -24,3 +24,6 @@ def delete_todo(request, pk):
     todo = get_object_or_404(Todo, pk=pk)
     todo.delete()
     return redirect("todo_list")
+# Create your views here.
+def landing(request):
+    return render(request, 'core/landing.html')

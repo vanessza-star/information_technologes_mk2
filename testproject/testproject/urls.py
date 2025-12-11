@@ -5,3 +5,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include("core.urls")),
 ]
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('core.urls')),   # ← лендінг буде за адресою /
+]
